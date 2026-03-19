@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --color-icip-blue: #003366;
+  --color-icip-light-blue: #0066cc;
+  --color-icip-gold: #ffcc00;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#f4f7f9] text-[#333];
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display;
+}

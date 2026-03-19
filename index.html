@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTI 2026 | IEEE ICIP Workshop</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        icip: {
+                            blue: '#003366',
+                            lightBlue: '#0066cc',
+                            gold: '#ffcc00',
+                            navy: '#002244',
+                            bg: '#f4f7f9',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #f4f7f9; color: #333; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+        .prose p { margin-bottom: 1.5rem; line-height: 1.8; }
+        .sidebar-card { background: white; border: 1px solid #e5e7eb; border-radius: 2px; padding: 2rem; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+        .nav-link { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: white; padding: 1rem; transition: background 0.2s; }
+        .nav-link:hover { background: rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body>
+
+    <!-- Top Header - White with Logos -->
+    <div class="bg-white border-b border-gray-100 py-4 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <img src="https://2026.ieeeicip.org/wp-content/uploads/sites/4/2025/10/ICIP26_logo_tiny.png" class="evenz-logo_header_mob" alt="2026 IEEE International Conference on Image Processing">
+                <div class="hidden sm:block">
+                    <h1 class="text-[#003366] font-extrabold text-2xl leading-none">2026 IEEE International Conference on Image Processing</h1>
+                    <p class="text-[#0066cc] text-[10px] font-bold uppercase tracking-[0.2em] mt-1">13-17 September 2026, Tampere, Finland</p>
+                </div>
+            </div>
+            <div class="hidden lg:flex items-center gap-4">
+                <img src="sps-ieee-logo.svg" height="68" style="height: 68px;" alt="IEEE Signal Processing Society">
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Main Navigation - Navy -->
+    <header class="sticky top-0 z-50 bg-[#003366] shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-14">
+                <nav class="hidden md:flex items-center">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#dates" class="nav-link">Dates</a>
+                    <a href="#organizers" class="nav-link">Organizers</a>
+                    <a href="#program" class="nav-link">Program</a>
+                    <a href="#submission" class="nav-link">Submission</a>
+                </nav>
+                <div class="flex items-center">
+                    <a href="#submission" class="bg-[#ffcc00] text-[#003366] px-6 py-2 rounded-sm font-bold text-xs uppercase tracking-widest hover:bg-white transition-colors">
+                        Submit Paper
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Banner Area -->
+    <section class="relative h-[400px] flex items-center justify-center overflow-hidden bg-icip-navy">
+        <div class="absolute inset-0 z-0">
+            <img src="https://picsum.photos/seed/lyon/1920/1080?blur=2" alt="Lyon Banner" class="w-full h-full object-cover brightness-[0.4]">
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h2 class="text-white font-display font-black text-4xl md:text-6xl uppercase tracking-tighter mb-4">ARTI 2026</h2>
+            <div class="h-1 w-24 bg-[#ffcc00] mx-auto mb-6"></div>
+            <p class="text-white text-lg md:text-xl font-medium max-w-3xl mx-auto leading-relaxed">
+                Workshop on Agentic Reasoning for Trustworthy Imagery
+            </p>
+            <p class="text-gray-300 mt-4 text-sm uppercase tracking-[0.3em]">
+                Satellite Workshop @ IEEE ICIP 2026
+            </p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb Bar -->
+    <div class="bg-white border-b border-gray-200 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-gray-400">
+            <a href="#" class="hover:text-[#003366]">Home</a>
+            <span>/</span>
+            <a href="#" class="hover:text-[#003366]">Workshops</a>
+            <span>/</span>
+            <span class="text-[#003366]">ARTI 2026</span>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid lg:grid-cols-3 gap-12">
+            
+            <!-- Left Column - Main Content -->
+            <div class="lg:col-span-2 space-y-12">
+                
+                <!-- About Section -->
+                <section id="about" class="bg-white p-8 sm:p-12 rounded-sm shadow-sm border border-gray-100">
+                    <h3 class="text-[#003366] text-2xl font-bold mb-8 flex items-center gap-3">
+                        <span class="w-1 h-8 bg-[#ffcc00]"></span>
+                        Agentic Reasoning for Trustworthy Imagery (ARTI)
+                    </h3>
+                    <div class="prose max-w-none text-gray-600">
+                        <p class="text-lg font-medium text-[#003366]">
+                            Recent breakthroughs in agentic AI have transitioned computer vision from static, feed-forward perception to dynamic systems capable of reasoning, planning, and iterative verification.
+                        </p>
+                        <p>
+                            Concurrently, the proliferation of synthetic media, adversarial attacks, and sophisticated data degradation has made reliability and authenticity central challenges for the signal processing community. The <strong>Agentic Reasoning for Trustworthy Imagery (ARTI)</strong> workshop introduces a novel paradigm: moving beyond passive image processing toward "active" systems that reason about visual uncertainty, provenance, and manipulation.
+                        </p>
+                        <!-- <p>
+                            While ICIP traditionally addresses restoration, forensics, and security as distinct tracks, ARTI unifies these domains through the lens of agentic reasoning. The workshop focuses on systems that do not merely process pixels but actively verify authenticity and robustness through multi-stage decision-making and feedback-driven analysis.
+                        </p> -->
+                    </div>
+                </section>
+
+                <!-- Program Section -->
+                <section id="program" class="bg-white p-8 sm:p-12 rounded-sm shadow-sm border border-gray-100">
+                    <h3 class="text-[#003366] text-2xl font-bold mb-8 flex items-center gap-3">
+                        <span class="w-1 h-8 bg-[#ffcc00]"></span>
+                        Technical Program (TBD)
+                    </h3>
+                    <!-- <div class="space-y-6">
+                        <div class="border-l-2 border-gray-100 pl-6 py-2">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-[10px] font-black text-[#0066cc] uppercase tracking-widest bg-blue-50 px-2 py-1">09:00 - 09:30</span>
+                                <h4 class="text-gray-900 font-bold">Opening Keynote</h4>
+                            </div>
+                            <p class="text-sm text-gray-500">"Agentic AI for Robust and Trustworthy Visual Systems." This session defines the shift from feed-forward perception to reasoning-driven imaging.</p>
+                        </div>
+                        <div class="border-l-2 border-gray-100 pl-6 py-2">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-[10px] font-black text-[#0066cc] uppercase tracking-widest bg-blue-50 px-2 py-1">09:30 - 10:15</span>
+                                <h4 class="text-gray-900 font-bold">Regular Paper Session I: Oral</h4>
+                            </div>
+                            <p class="text-sm text-gray-500">Focused on Adversarial Robustness and Trustworthy Vision. Featuring top-tier peer-reviewed papers on adversarial imaging and robust perception.</p>
+                        </div>
+                        <div class="border-l-2 border-gray-100 pl-6 py-2">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-[10px] font-black text-[#0066cc] uppercase tracking-widest bg-blue-50 px-2 py-1">10:15 - 10:30</span>
+                                <h4 class="text-gray-900 font-bold">Interactive Poster Session & Coffee Break</h4>
+                            </div>
+                            <p class="text-sm text-gray-500">To promote inclusivity and student engagement, this central session allows for one-on-one dialogue between authors and attendees.</p>
+                        </div>
+                        <div class="border-l-2 border-gray-100 pl-6 py-2">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-[10px] font-black text-[#0066cc] uppercase tracking-widest bg-blue-50 px-2 py-1">10:30 - 10:50</span>
+                                <h4 class="text-gray-900 font-bold">Invited Technical Talk</h4>
+                            </div>
+                            <p class="text-sm text-gray-500">"Watermarking and Content Authenticity for Generative Imaging." A deep dive into the intersection of provenance and agentic verification.</p>
+                        </div>
+                        <div class="border-l-2 border-gray-100 pl-6 py-2">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-[10px] font-black text-[#0066cc] uppercase tracking-widest bg-blue-50 px-2 py-1">10:50 - 11:35</span>
+                                <h4 class="text-gray-900 font-bold">Regular Paper Session II: Oral</h4>
+                            </div>
+                            <p class="text-sm text-gray-500">Focused on Reasoning-Guided Restoration. This session explores how agentic models handle low-vision data and verification-aware pipelines.</p>
+                        </div>
+                        <div class="border-l-2 border-gray-100 pl-6 py-2">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="text-[10px] font-black text-[#0066cc] uppercase tracking-widest bg-blue-50 px-2 py-1">11:35 - 12:00</span>
+                                <h4 class="text-gray-900 font-bold">Closing Remarks & Awards</h4>
+                            </div>
+                            <p class="text-sm text-gray-500">Summary of the workshop and announcement of best paper awards.</p>
+                        </div>
+                    </div> -->
+                </section>
+
+                <!-- Organizers Section -->
+                <section id="organizers" class="bg-white p-8 sm:p-12 rounded-sm shadow-sm border border-gray-100">
+                    <h3 class="text-[#003366] text-2xl font-bold mb-8 flex items-center gap-3">
+                        <span class="w-1 h-8 bg-[#ffcc00]"></span>
+                        Organizing Committee
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Pai Chet Ng</h4>
+                            <p class="text-xs text-[#0066cc] font-medium">Singapore Institute of Technology, Singapore</p>
+                            <p class="text-[10px] text-gray-400">paichet.ng@singaportech.edu.sg</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Guang Hua</h4>
+                            <p class="text-xs text-[#0066cc] font-medium">Singapore Institute of Technology, Singapore</p>
+                            <p class="text-[10px] text-gray-400">guang.hua@singaporetech.edu.sg</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Fani Deligianni</h4>
+                            <p class="text-xs text-[#0066cc] font-medium">University of Glasgow, United Kingdom</p>
+                            <p class="text-[10px] text-gray-400">fani.deligianni@glasgow.ac.uk</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Konstantinos N. Plataniotis</h4>
+                            <p class="text-xs text-[#0066cc] font-medium">University of Toronto, Canada</p>
+                            <p class="text-[10px] text-gray-400">kostas@ece.utoronto.ca</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Column - Sidebar -->
+            <aside class="space-y-8">
+                
+                <!-- Important Dates Sidebar -->
+                <section id="dates" class="bg-[#003366] text-white p-8 rounded-sm shadow-lg">
+                    <h3 class="text-[#ffcc00] text-lg font-bold mb-6 uppercase tracking-widest">Important Dates</h3>
+                    <div class="space-y-6">
+                        <div class="border-b border-white/10 pb-4">
+                            <p class="text-[10px] font-bold text-blue-300 uppercase tracking-widest mb-1">Satellite Workshop webpages due date</p>
+                            <p class="font-bold text-white">March 18, 2026</p>
+                        </div>
+                        <div class="border-b border-white/10 pb-4">
+                            <p class="text-[10px] font-bold text-blue-300 uppercase tracking-widest mb-1">Satellite Workshop paper submission due date</p>
+                            <p class="font-bold text-white">May 13, 2026</p>
+                        </div>
+                        <div class="border-b border-white/10 pb-4">
+                            <p class="text-[10px] font-bold text-blue-300 uppercase tracking-widest mb-1">Satellite Workshop paper acceptance notification</p>
+                            <p class="font-bold text-white">June 10, 2026</p>
+                        </div>
+                        <div class="border-b border-white/10 pb-4">
+                            <p class="text-[10px] font-bold text-blue-300 uppercase tracking-widest mb-1">Satellite Workshop camera-ready due date</p>
+                            <p class="font-bold text-white">July 1, 2026</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-blue-300 uppercase tracking-widest mb-1">Satellite Workshop author registration due date</p>
+                            <p class="font-bold text-white">July 16, 2026</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Submission Sidebar -->
+                <section id="submission" class="sidebar-card">
+                    <h3 class="text-[#003366] text-lg font-bold mb-6 uppercase tracking-widest">Submission</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">
+                        Submit for publication in <strong>IEEE Xplore ICIP 2026 Workshop Proceedings</strong>.
+                    </p>
+                    <a href="#" class="block w-full bg-[#0066cc] text-white py-3 text-center rounded-sm font-bold text-xs uppercase tracking-widest hover:bg-[#003366] transition-colors">
+                        Submit Paper
+                    </a>
+                </section>
+
+                <!-- TPC Sidebar -->
+                <section id="tpc" class="sidebar-card">
+                    <h3 class="text-[#003366] text-lg font-bold mb-6 uppercase tracking-widest">Technical Committee</h3>
+                    <ul class="space-y-4 text-xs text-gray-600">
+                        <li>Seyed Jamal Seyedmohammadi, SIT</li>
+                        <li>Seyed Mohammad Sheikholeslami, UofT</li>
+                        <li>Seyed Kawa Atapour, Concordia</li>
+                        <li>Christos Korgialas, AUTH</li>
+                        <li>Kaushik Bhargav Sivangi, Glasgow</li>
+                    </ul>
+                </section>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-icip-navy text-white py-16 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 border-b border-white/10 pb-12 mb-12">
+                <div>
+                    <img src="https://signalprocessingsociety.org/sites/default/files/logo_0.png" alt="IEEE SPS Logo" class="h-12 object-contain brightness-0 invert opacity-80 mb-6">
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        IEEE ICIP is the world's largest and most comprehensive technical conference focused on image and video processing and computer vision.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-[#ffcc00] font-bold text-sm uppercase tracking-widest mb-6">Quick Links</h5>
+                    <ul class="text-xs text-gray-400 space-y-3">
+                        <li><a href="https://2026.ieeeicip.org" class="hover:text-white">ICIP 2026 Official Site</a></li>
+                        <li><a href="#about" class="hover:text-white">About ARTI</a></li>
+                        <li><a href="#dates" class="hover:text-white">Important Dates</a></li>
+                        <li><a href="#submission" class="hover:text-white">Call for Papers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[#ffcc00] font-bold text-sm uppercase tracking-widest mb-6">Contact</h5>
+                    <p class="text-xs text-gray-400 mb-4">For inquiries regarding the ARTI workshop:</p>
+                    <p class="text-xs font-bold text-white">paichet.ng@singaportech.edu.sg</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-gray-500 font-bold uppercase tracking-widest">
+                <p>© 2026 IEEE Signal Processing Society. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white">Terms</a>
+                    <a href="#" class="hover:text-white">Privacy</a>
+                    <a href="#" class="hover:text-white">Nondiscrimination</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
